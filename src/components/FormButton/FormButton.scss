@@ -1,0 +1,28 @@
+.buttonForm {
+  height: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  width: 100%;
+  background-color: #3e6ae1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: all .3s ease;
+  cursor: pointer;
+  border: 3px solid transparent;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: #3457b1;
+  }
+
+  &:active {
+    border-color: black;
+  }
+
+  &:disabled {
+    background-color: #9eb4f0;
+    cursor: not-allowed;
+    border-color: transparent;
+  }
+}
