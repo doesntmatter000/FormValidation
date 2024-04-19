@@ -68,7 +68,7 @@ export const SecondForm = () => {
                         <div className="input__wrapper">
                             <input type={svgToggle2 ? "text" : "password"} id="password2" {...register("password2", {disabled: watchPassword1 === "", required: "Enter Password"})} />
                             <div onClick={() => toggleIconInput(2)} style={watchPassword2 === "" || watchPassword2 === undefined ? { visibility: "hidden" } : { visibility: "visible" }}>
-                                {svgToggle1 ? <BsFillEyeSlashFill /> : <BsEye />}
+                                {svgToggle2 ? <BsFillEyeSlashFill /> : <BsEye />}
                             </div>
                         </div>
                         <label htmlFor="password2">Confirm Password</label>
